@@ -1,0 +1,8 @@
+<p>Title: {{ task.title }}</p>
+<p>Deadline: {{ task.deadline | date:'dd.MM.yyyy' }}</p>
+<div class="mark-done">
+    <input type="checkbox" [(ngModel)]="task.completed" (change)="doneTask()">
+    <label>done</label>
+</div>
+<button type="button" (click)="editTask()" appHighlightButton>edit</button>
+<button type="button" (click)="deleteTask()" appHighlightButton>delete</button>

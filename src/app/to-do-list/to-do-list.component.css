@@ -1,0 +1,9 @@
+.task-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    min-width: 365px;
+}
+h2 {
+    margin: 0;
+}

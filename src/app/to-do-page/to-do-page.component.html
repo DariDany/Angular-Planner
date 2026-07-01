@@ -1,0 +1,7 @@
+<div class="to-do-page">
+    <app-add-task-form (emptyTaskEvent)="showModal()"></app-add-task-form>
+    <app-to-do-list [todoList] = "tasks"></app-to-do-list>
+    <app-done-tasks [doneList] = "doneTasks"></app-done-tasks>
+</div>
+<app-modal-window *ngIf="modalWin" (closeModalEvent)="closeModal()"></app-modal-window>
+<app-edit-modal *ngIf="editModal" [task]="editTask" ></app-edit-modal>

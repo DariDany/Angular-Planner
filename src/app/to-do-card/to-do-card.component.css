@@ -1,0 +1,30 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(84, 40, 12);
+    border-radius: 10px;
+    background-color: rgb(251, 243, 230);
+    box-shadow: 5px 5px 5px rgba(84, 40, 12, 0.7);
+}
+p {
+    margin: 0;
+}
+button {
+    padding: 0 10px 0 10px;
+    background-color: rgb(84, 40, 12);
+    color:blanchedalmond;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+.mark-done {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

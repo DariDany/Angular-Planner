@@ -1,0 +1,10 @@
+<h2>Add new task!</h2>
+<form>
+    <label>Title: 
+        <input type='text' required #taskTitle>
+    </label>
+    <label>Deadline: 
+        <input type="datetime-local" required #taskDeadline>
+    </label>
+    <button type="button" (click)="addTask(taskTitle.value, taskDeadline.value)" appHighlightButton>Add</button>
+</form>
